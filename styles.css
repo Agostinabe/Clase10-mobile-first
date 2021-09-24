@@ -1,4 +1,6 @@
 /* fonts */
+
+
 @font-face {
     font-family:"Always";
     src:
@@ -17,11 +19,11 @@
     --main-rosa-color: #e1d0d1;
     --main-azul-color: #637077;
     --main-marron-color: #ba7b4c;
-    --main-crema-color: #f3dfb6;
+    --main-crema-color: #fffcf7;
     --main-celeste-color: #8fa8af;
 }
 
-/* reset */
+/* resets */
 * {
     margin: 0;
     padding: 1%;
@@ -39,13 +41,14 @@ p,li,button {
 /* header */
 h1 {
     font-family: 'Always';
+    font-size: 1.7em;
 }
 
 header {
     display: flex;
     align-content: space-between;
     background-color: var(--main-crema-color);
-    /* margin: 2%; */
+    padding: 2%;
 }
 
 header a {
@@ -61,13 +64,14 @@ header a {
 }
 
 .dropdown {
+    display: none;
     position: absolute;
     background-color: var(--main-crema-color);
     min-width: 160px;
     padding: 12px 16px;
     z-index: 5;
     top: 35px;
-    right: -18px;
+    right: -7px;
 }
 
 .menu:hover .dropdown {
@@ -76,7 +80,6 @@ header a {
 
 .dropdown li {
     list-style: none;
-
 }
 
 /* cuerpo */
@@ -103,7 +106,8 @@ main img {
     flex-direction: column;
     align-items: center;
     margin: 10% 0;
-    border: 2px solid var(--main-celeste-color);
+    border: 2px solid var(--main-crema-color);
+    padding: 3%;
 }
 }
 .imgContainer {
@@ -114,5 +118,26 @@ main img {
     position: absolute;
     right: 25%;
     font-size: 1.3em;
+}
+
+.product button {
+    margin: 5% 0;
+    width: 90%;
+    background-color: var(--main-marron-color);
+    border-radius: 15px;
+    border: 2px solid var(--main-crema-color);
+    cursor: pointer;
+    padding: 4% 15%;
+}
+
+.product button:hover {
+    background-color: var(--main-crema-color);
+}
+
+.product button a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 800;
+    color: var(--main-crema-color);
 }
 
